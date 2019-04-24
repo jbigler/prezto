@@ -11,3 +11,31 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+source ~/.purepower
+
+# Rbenv
+export RBENV_ROOT=$HOME/.rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+alias vi=vim
+
+alias primusrun="vblank_mode=0 primusrun"
+alias optirun="vblank_mode=0 optirun -b primus"
+
+# Fancy Ctrl-Z to quickly return to vim
+fancy-ctrl-z () {
+if [[ $#BUFFER -eq 0 ]]; then
+  BUFFER="fg"
+  zle accept-line
+else
+  zle push-input
+  zle clear-screen
+fi
+}
+zle -N fancy-ctrl-z
+bindkey '^Z' fancy-ctrl-z
+
+# Android
+export PATH=$PATH:/opt/android-sdk/tools:/opt/android-sdk/platform-tools
+
