@@ -57,6 +57,9 @@ window or tab.
 Updating
 --------
 
+If you are using a fork, then you must sync the fork with your local copy.
+Follow the instructions at [Syncing a Fork](https://help.github.com/en/articles/syncing-a-fork).
+
 Run `zprezto-update` to automatically check if there is an update to zprezto.
 If there are no file conflicts, zprezto and its submodules will be
 automatically updated. If there are conflicts you will instructed to go into
