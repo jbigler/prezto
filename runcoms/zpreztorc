@@ -35,10 +35,11 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
-  'syntax-highlighting' \
-  'prompt' \
   'docker' \
-  'git'
+  'git' \
+  'syntax-highlighting' \
+  'history-substring-search' \
+  'prompt' 
 
 #
 # Autosuggestions
