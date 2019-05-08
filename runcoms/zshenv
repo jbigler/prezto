@@ -9,3 +9,18 @@
 if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+export HIST_STAMPS="yyyy-mm-dd"
+export UID
+
+export EDITOR=vim
+export BROWSER=firefox
+
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
+
+# This line helps xdg-open figure out how to open things.
+# Very important for Calibre to open PDF files and folders.
+export XDG_CURRENT_DESKTOP=XFCE
+
