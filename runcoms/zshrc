@@ -39,5 +39,9 @@ bindkey '^Z' fancy-ctrl-z
 # Android
 export PATH=$PATH:/opt/android-sdk/tools:/opt/android-sdk/platform-tools
 
+# Git alias for managing dotfiles repository
+# https://github.com/anandpiyer/.dotfiles/blob/master/.dotfiles/README.md
+# https://www.anand-iyer.com/blog/2018/a-simpler-way-to-manage-your-dotfiles.html
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
