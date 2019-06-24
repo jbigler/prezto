@@ -14,6 +14,7 @@ export HIST_STAMPS="yyyy-mm-dd"
 export UID
 
 export EDITOR=vim
+export VISUAL=vim
 export BROWSER=firefox
 
 export GTK_IM_MODULE=ibus
