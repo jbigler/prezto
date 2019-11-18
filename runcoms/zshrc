@@ -20,9 +20,6 @@ eval "$(rbenv init -)"
 
 alias vi=vim
 
-alias primusrun="vblank_mode=0 primusrun"
-alias optirun="vblank_mode=0 optirun -b primus"
-
 # Fancy Ctrl-Z to quickly return to vim
 fancy-ctrl-z () {
 if [[ $#BUFFER -eq 0 ]]; then
