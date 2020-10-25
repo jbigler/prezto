@@ -17,11 +17,8 @@ export EDITOR=vim
 export VISUAL=vim
 export BROWSER=firefox
 
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus
-
 # This line helps xdg-open figure out how to open things.
 # Very important for Calibre to open PDF files and folders.
-export XDG_CURRENT_DESKTOP=XFCE
+# This was used when I used i3 with no DE
+# export XDG_CURRENT_DESKTOP=XFCE
 

@@ -39,6 +39,7 @@ zstyle ':prezto:load' pmodule \
   'utility' \
   'completion' \
   'docker' \
+  'ssh' \
   'git' \
   'syntax-highlighting' \
   'history-substring-search' \
