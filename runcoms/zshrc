@@ -22,7 +22,8 @@ export RBENV_ROOT=$HOME/.rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-alias vi=vim
+alias vim=nvim
+alias vi=nvim
 
 # Fancy Ctrl-Z to quickly return to vim
 fancy-ctrl-z () {
@@ -38,7 +39,9 @@ zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
 
 # Android
-export PATH=$PATH:/opt/android-sdk/tools:/opt/android-sdk/platform-tools
+#export PATH=$PATH:/opt/android-sdk/tools:/opt/android-sdk/platform-tools
+export ANDROID_SDK=$HOME/Android/Sdk
+export PATH=$ANDROID_SDK/emulator:$ANDROID_SDK/tools:$PATH
 
 # Git alias for managing dotfiles repository
 # https://github.com/anandpiyer/.dotfiles/blob/master/.dotfiles/README.md
@@ -64,3 +67,12 @@ _systemctl_unit_state() {
   _sys_unit_state=( $(__systemctl list-unit-files "$PREFIX*" | awk '{print $1, $2}') ) }
 
 GITSTATUS_LOG_LEVEL=DEBUG
+
+if type clipcat-menu >/dev/null 2>&1; then
+   alias clipedit=' clipcat-menu --finder=builtin edit'
+   alias clipdel=' clipcat-menu --finder=builtin remove'
+
+   bindkey -s '^\' "^Q clipcat-menu --finder=builtin insert ^J"
+   bindkey -s '^]' "^Q clipcat-menu --finder=builtin remove ^J"
+fi
+

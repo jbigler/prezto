@@ -13,8 +13,8 @@ fi
 export HIST_STAMPS="yyyy-mm-dd"
 export UID
 
-export EDITOR=vim
-export VISUAL=vim
+export EDITOR=nvim
+export VISUAL=nvim
 export BROWSER=firefox
 
 # This line helps xdg-open figure out how to open things.

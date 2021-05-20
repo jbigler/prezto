@@ -64,4 +64,9 @@ fi
 
 # VAAPI settings
 export MOZ_X11_EGL=1
-export LIBVA_DRIVER_NAME=i965
+export LIBVA_DRIVER_NAME=vdpau
+
+export QT_QPA_PLATFORMTHEME=qt5ct
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
